@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Кардамон — кафе и кофейня</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><b>Кардамон</b>
+<nav><a href="#menu">Меню</a><a href="#about">Часы работы</a><a href="#contacts">Контакты</a>
+<button class="cartbtn" id="openCart">Заказ: <span id="cnt">0</span></button></nav></div></header>
+
+<div class="hero"><div class="wrap">
+<h1>Кофе и завтраки весь день</h1>
+<p>Свежая выпечка, зёрна местной обжарки и столик у окна. Собираем заказ за 10 минут.</p>
+<div class="row"><a class="btn" href="#menu">Выбрать блюда</a>
+<span class="status"><span class="dot" id="dot"></span><span id="open">Проверяем часы работы…</span></span></div>
+</div></div>
+
+<section id="menu"><div class="wrap">
+<h2>Меню</h2>
+<div class="tabs" id="tabs"></div>
+<div class="menu" id="menu-grid"></div>
+</div></section>
+
+<section id="about" style="background:var(--surface)"><div class="wrap about">
+<div><h2>О нас</h2>
+<p>Мы варим кофе из зёрен небольших обжарщиков, печём хлеб и десерты каждое утро и не торопим гостей. Приходите поработать, встретиться с друзьями или взять завтрак с собой.</p></div>
+<div class="hours" id="hours" aria-label="Часы работы"></div>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+<h2>Контакты</h2>
+<p>Адрес: ул. Примерная, 10<br>Телефон: <a href="tel:+996000000000">+996 000 000 000</a><br>Почта: <a href="mailto:hello@kardamon.example">hello@kardamon.example</a></p>
+</div></section>
+
+<footer><div class="wrap">© 2026 Кардамон. Все права защищены.</div></footer>
+
+<aside class="drawer" id="drawer" aria-label="Ваш заказ" aria-hidden="true">
+<button class="close" id="closeCart">Закрыть</button>
+<h3>Ваш заказ</h3>
+<div class="lines" id="lines"></div>
+<div class="total"><span>Итого</span><span id="sum">0 сом</span></div>
+<input id="name" placeholder="Ваше имя" autocomplete="name">
+<input id="phone" placeholder="Телефон" inputmode="tel" autocomplete="tel">
+<p class="msg" id="msg"></p>
+<button class="btn" id="send">Отправить заказ</button>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
